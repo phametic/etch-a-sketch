@@ -1,0 +1,125 @@
+:root {
+  --grid-cols: 16;
+  --grid-rows: 16;
+  --tileWidth: 40px;
+  --tileHeight: 40px;
+}
+
+#container {
+  border: 1px solid black;
+  background-color: red;
+}
+
+h1 {
+  text-align: center;
+  color: yellow;
+  font-size: 50px;
+}
+
+.myBoard {
+  display: grid;
+  background-color: white;
+  border-radius: 5px;
+  width: 960px;
+  margin: 0 auto;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  justify-content: center;
+}
+
+.tile {
+  border: 1px solid black;
+  width: var(--tileWidth);
+  height: var(--tileHeight);
+}
+
+.reset {
+  background-color: white;
+  border: none;
+  color: red;
+  padding: 16px 32px;
+  transition-duration: 0.3s;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  font-size: 25px;
+}
+
+.rgb {
+  background-color: white;
+  border: none;
+  color: red;
+  padding: 16px 32px;
+  transition-duration: 0.3s;
+  grid-row-start: 2;
+  font-size: 20px;
+}
+
+.shadow {
+  background-color: white;
+  border: none;
+  color: red;
+  padding: 16px 32px;
+  transition-duration: 0.3s;
+  grid-row-start: 2;
+  font-size: 20px;
+}
+
+.black {
+  background-color: white;
+  border: none;
+  color: red;
+  padding: 16px 32px;
+  transition-duration: 0.3s;
+  grid-row-start: 2;
+  font-size: 20px;
+}
+
+.grid {
+  background-color: white;
+  border: none;
+  color: red;
+  padding: 16px 32px;
+  transition-duration: 0.3s;
+  grid-row-start: 2;
+  font-size: 20px;
+}
+
+.rgb:hover {
+  background-color: black;
+  color: red;
+  border: 1px black solid;
+}
+
+.reset:hover {
+  background-color: black;
+  color: red;
+  border: 1px black solid;
+}
+
+.shadow:hover {
+  background-color: black;
+  color: red;
+  border: 1px black solid;
+}
+
+.black:hover {
+  background-color: black;
+  color: red;
+  border: 1px black solid;
+}
+
+.grid:hover {
+  background-color: black;
+  color: red;
+  border: 1px #f44336 solid;
+}
+
+#btnContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 25px;
+  width: 50%;
+  margin: 25px auto;
+}
